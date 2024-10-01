@@ -5,8 +5,8 @@
 1. [팀 소개](#팀-소개)
 2. [기술 스택](#기술-스택)
    - [Backend](#1-backend)
-   - [Frontend](#2-frontend)
-   - [Database](#3-database)
+   - [Security](#2-security)
+   - [Frontend](#3-frontend)
    - [Tool](#4-tool)
 3. [프로젝트 개요](#프로젝트-개요)
    - [배경](#1-배경)
@@ -26,8 +26,9 @@
      - [논리 모델링](#2-논리-모델링)
      - [물리 모델링](#3-물리-모델링)
 5. [산출물](#산출물)
+   - [와이어 프레임](#와이어프레임)
    - [스토리 보드](#스토리보드)
-   - [기능명세서서](#기능명세서)
+   - [기능명세서](#기능명세서)
    - [테스트 케이스](#테스트케이스)
    - [화면결과](#화면결과)
 
@@ -64,9 +65,9 @@
 
 ### 3. Frontend <a id="3-frontend"></a>
 
-| Vue 3                                                                                     | JavaScript                                                                                      | HTML                                                                                            | CSS                                                                                            | Chat.js                                                                                     | Calendar                                                                                     |
+| Vue 3                                                                                     | JavaScript                                                                                      | HTML                                                                                            | CSS                                                                                            | Chart.js                                                                                     | VCalendar                                                                                     |
 | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
-| ![Vue 3](https://img.shields.io/badge/Vue_3-4FC08D.svg?&logo=vue.js&logoColor=white)       | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?&logo=javascript&logoColor=black) | ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)                     | ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)                     | ![Chat.js](https://img.shields.io/badge/Chat.js-FF4500.svg?&logo=javascript&logoColor=white) | ![Calendar](https://img.shields.io/badge/Calendar-8A2BE2.svg?&logo=calendar&logoColor=white) |
+| ![Vue 3](https://img.shields.io/badge/Vue_3-4FC08D.svg?&logo=vue.js&logoColor=white)       | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?&logo=javascript&logoColor=black) | ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)                     | ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)                     | ![Chart.js](https://img.shields.io/badge/Chart.js-FF4500.svg?&logo=javascript&logoColor=white) | ![VCalendar](https://img.shields.io/badge/VCalendar-8A2BE2.svg?&logo=vcalendar&logoColor=white) |
 
 ### 4. Tool <a id="4-tool"></a>
 
@@ -159,67 +160,124 @@
 
 ![image](https://github.com/user-attachments/assets/e3a3e217-34e9-4954-8301-1150095d71bf)
 
+## 2. 와이어 프레임<a id="와이어프레임"></a>
 
+### 2.1 전체 와이어 프레임
+![image](https://github.com/user-attachments/assets/89defadf-fa92-4d09-8de3-767962dab4d2)
 
-## 2. 스토리 보드<a id="스토리보드"></a>
-
-### 2.1. 전체 스토리 보드
-![image](https://github.com/user-attachments/assets/574e8f9d-2cfc-4063-993b-c4980ea9873d)
 
 ### 2.2 회원
 
 <details>
   <summary>2.2.1. 마이페이지</summary>
-  <img src="https://github.com/user-attachments/assets/81084eef-6700-45b2-af93-1aaf8d969781" alt="마이페이지" />
+   <img src="https://github.com/user-attachments/assets/e2019098-836a-48c4-9d03-d9e93060f4e0" alt="마이페이지" />
 </details>
 
 <details>
   <summary>2.2.2. 일반 & 카카오 로그인</summary>
-  <img src="https://github.com/user-attachments/assets/593ac0fb-fe8e-4f1c-a975-daa4b67d7fdd" alt="일반 & 카카오 로그인" />
+  <img src="https://github.com/user-attachments/assets/022e3e9e-7ab3-4f97-9a99-9ef7abb99c55" alt="일반 & 카카오 로그인" />
 </details>
 
 <details>
   <summary>2.2.3. 회원가입</summary>
-  <img src="https://github.com/user-attachments/assets/fc174228-f14a-4de6-8bf1-2845cb9a2dc5" alt="회원가입" />
+  <img src="https://github.com/user-attachments/assets/01b21f1d-97c7-4562-8581-fd53e3043258" alt="회원가입" />
 </details>
 
 <details>
   <summary>2.2.4. 아이디 찾기</summary>
-  <img src="https://github.com/user-attachments/assets/a4f3eb47-401e-4c4c-b95e-1270d71e77a6" alt="아이디 찾기" />
+  <img src="https://github.com/user-attachments/assets/43d1d170-9b8c-4801-a8e5-ddb0e55fcf95" alt="아이디 찾기" />
 </details>
 
 <details>
   <summary>2.2.5. 비밀번호 찾기</summary>
-  <img src="https://github.com/user-attachments/assets/2a95d0d6-6bc2-42d8-adda-8b4663504a34" alt="비밀번호 찾기" />
+  <img src="https://github.com/user-attachments/assets/38194563-9c02-46a3-a369-63e330aa0aed" alt="비밀번호 찾기" />
 </details>
 
 ### 2.3 스터디 그룹 및 모집관련
 
 <details>
   <summary>2.3.1 스터디 그룹 모집글</summary>
-  <img src="https://github.com/user-attachments/assets/ddaa6706-9809-43d8-9319-417ad19eeeb0" alt="스터디 그룹 모집글" />
+
+  <img src="https://github.com/user-attachments/assets/3687f3ec-1479-4374-89d6-1b21ff639ea4" alt="스터디 그룹 모집글" />
 </details>
 
 <details>
   <summary>2.3.2 스터디 그룹 자유게시판 및 공지사항</summary>
-  <img src="https://github.com/user-attachments/assets/1bdcc2c5-6cd2-43f1-bdaf-07592b24e916" alt="스터디 그룹 자유게시판 및 공지사항" />
+
+  <img src="https://github.com/user-attachments/assets/1e988cc6-a63b-4613-ab6d-4e564efb5895" alt="스터디 그룹 자유게시판 및 공지사항" />
 </details>
 
 <details>
   <summary>2.3.3 스터디 그룹원</summary>
-  <img src="https://github.com/user-attachments/assets/5fcfb1ad-5f62-4a3d-9eeb-fe13104b564e" alt="스터디 그룹원" />
+  <img src="https://github.com/user-attachments/assets/64a296f5-06bc-4b2f-a148-8baa08ced26c" alt="스터디 그룹원" />
 </details>
 
 ### 2.4 스터디 그룹 일정 및 문제
+<details>
+  <summary>스터디 그룹 일정 및 문제</summary>
+  <img src="https://github.com/user-attachments/assets/84913b4b-d22c-4696-9881-97866343625" alt="스터디 그룹 일정 및 문제" />
+</details>
+
+
+## 3. 스토리 보드<a id="스토리보드"></a>
+
+### 3.1 전체 스토리 보드
+![image](https://github.com/user-attachments/assets/574e8f9d-2cfc-4063-993b-c4980ea9873d)
+
+### 3.2 회원
+
+<details>
+  <summary>3.2.1. 마이페이지</summary>
+  <img src="https://github.com/user-attachments/assets/81084eef-6700-45b2-af93-1aaf8d969781" alt="마이페이지" />
+</details>
+
+<details>
+  <summary>3.2.2. 일반 & 카카오 로그인</summary>
+  <img src="https://github.com/user-attachments/assets/593ac0fb-fe8e-4f1c-a975-daa4b67d7fdd" alt="일반 & 카카오 로그인" />
+</details>
+
+<details>
+  <summary>3.2.3. 회원가입</summary>
+  <img src="https://github.com/user-attachments/assets/fc174228-f14a-4de6-8bf1-2845cb9a2dc5" alt="회원가입" />
+</details>
+
+<details>
+  <summary>3.2.4. 아이디 찾기</summary>
+  <img src="https://github.com/user-attachments/assets/a4f3eb47-401e-4c4c-b95e-1270d71e77a6" alt="아이디 찾기" />
+</details>
+
+<details>
+  <summary>3.2.5. 비밀번호 찾기</summary>
+  <img src="https://github.com/user-attachments/assets/2a95d0d6-6bc2-42d8-adda-8b4663504a34" alt="비밀번호 찾기" />
+</details>
+
+### 3.3 스터디 그룹 및 모집관련
+
+<details>
+  <summary>3.3.1 스터디 그룹 모집글</summary>
+  <img src="https://github.com/user-attachments/assets/ddaa6706-9809-43d8-9319-417ad19eeeb0" alt="스터디 그룹 모집글" />
+</details>
+
+<details>
+  <summary>3.3.2 스터디 그룹 자유게시판 및 공지사항</summary>
+  <img src="https://github.com/user-attachments/assets/1bdcc2c5-6cd2-43f1-bdaf-07592b24e916" alt="스터디 그룹 자유게시판 및 공지사항" />
+</details>
+
+<details>
+  <summary>3.3.3 스터디 그룹원</summary>
+  <img src="https://github.com/user-attachments/assets/5fcfb1ad-5f62-4a3d-9eeb-fe13104b564e" alt="스터디 그룹원" />
+</details>
+
+### 3.4 스터디 그룹 일정 및 문제
 
 <details>
   <summary>스터디 그룹 일정 및 문제</summary>
-  <img src="https://github.com/user-attachments/assets/3b926cd3-f675-4476-b356-c4c2dffce89c" alt="스터디 그룹 일정 및 문제" />
+  <img src="https://github.com/user-attachments/assets/34e9165b-9e6a-4290-99e5-68619ccd3a5a" alt="스터디 그룹 일정 및 문제" />
 </details>
 
 
 
-## 3. 테스트 계획 및 결과 보고서 <a id="테스트케이스"></a>
+## 4. 테스트 계획 및 결과 보고서 <a id="테스트케이스"></a>
 
 [테스트 케이스 바로가기](https://docs.google.com/spreadsheets/d/1XVX6lAse2VZzDybUvryL8GyeM3-PO_EZMFG10hMVJSk/edit?gid=1079017783#gid=1079017783)
 
@@ -230,7 +288,7 @@
 
 
 
-## 4.화면결과 <a id="화면결과"></a>
+## 5.화면결과 <a id="화면결과"></a>
 
 ## 결과
 
@@ -304,27 +362,27 @@
 ### 2. 모집관련
 
 <details>
-  <summary>1. 스터디 그룹 찾기 최신순 </summary>
+  <summary>1. 스터디 그룹 모집글 찾기 최신순 </summary>
    <img src=https://github.com/user-attachments/assets/c954ac63-1115-4bec-9220-33087a5c921e>
 </details>
 <details>
-  <summary>2. 스터디 그룹 찾기 좋아요순 </summary>
+  <summary>2. 스터디 그룹 모집글 찾기 좋아요순 </summary>
    <img src=https://github.com/user-attachments/assets/eee90fff-36cf-4d7a-97ab-1e3800a64324>
 </details>
 <details>
-  <summary>3. 스터디 그룹 찾기 모집중</summary>
+  <summary>3. 스터디 그룹 모집글 찾기 모집중</summary>
    <img src=https://github.com/user-attachments/assets/ce731193-1ab9-4c3a-a235-76807bcd1d95>
 </details>
 <details>
-  <summary>4. 스터디 그룹 찾기 모집완료</summary>
+  <summary>4. 스터디 그룹 모집글 찾기 모집완료</summary>
    <img src=https://github.com/user-attachments/assets/02d2030b-bed7-4c38-a5e1-05c669294b56>
 </details>
 <details>
-  <summary>5. 스터디 그룹 태그로 찾기</summary>
+  <summary>5. 스터디 그룹 모집글 태그로 찾기</summary>
    <img src="https://github.com/user-attachments/assets/a23512b6-f0a8-4d00-9329-943cd4789ae9">
 </details>
 <details>
-  <summary>6. 스터디 그룹 제목으로 검색</summary>
+  <summary>6. 스터디 그룹 모집글 제목으로 검색</summary>
    <img src="https://github.com/user-attachments/assets/b1a98288-3ef8-44d9-9b9a-050bfd80e6b8">
 </details>
 <details>
@@ -368,16 +426,28 @@
    <img src="https://github.com/user-attachments/assets/eebd3690-7e97-4701-8a3d-c72cbbf7358d">
 </details>
 <details>
-  <summary>3. 내가 가입한 스터디그룹 가기 </summary>
+  <summary>2. 내가 가입한 스터디그룹 가기 </summary>
    <img src="https://github.com/user-attachments/assets/d435741b-489b-4ef4-8021-869c9c6fc11c">
 </details>
 <details>
-  <summary>4. 스터디 그룹 그룹원 관리 </summary>
+  <summary>3. 스터디 그룹 그룹원 관리 </summary>
    <img src="https://github.com/user-attachments/assets/19ff3bc3-a2db-42cf-89af-2f3357eba275">
 </details>
 <details>
-  <summary>5. 스터디 그룹 참가 신청자 관리 </summary>
-   <img src="">
+  <summary>4. 스터디 그룹 참가 신청</summary>
+   <img src="https://github.com/user-attachments/assets/5f626093-d608-4546-8d11-9e167ce92ca1">
+</details>
+<details>
+  <summary>5. 스터디 그룹 참가 신청 취소</summary>
+   <img src="https://github.com/user-attachments/assets/d65ae918-b991-4160-a9d2-59c46cf574d2">
+</details>
+<details>
+  <summary>6. 스터디 그룹 참가 신청 승인</summary>
+   <img src="https://github.com/user-attachments/assets/179a21ff-0b78-4845-b56f-2042c0f1063a">
+</details>
+<details>
+  <summary>7. 스터디 그룹 참가 신청 거절</summary>
+   <img src="https://github.com/user-attachments/assets/fec73d4d-0062-4331-9f6a-24a463a58108">
 </details>
 <br>
 
@@ -397,7 +467,7 @@
 </details>
 <details>
   <summary>4. 스터디 그룹 공지사항 삭제</summary>
-  <img src="https://github.com/user-attachments/assets/889dffe7-ab6f-4892-b22f-971e7814f918)">
+  <img src="https://github.com/user-attachments/assets/889dffe7-ab6f-4892-b22f-971e7814f918">
 </details>
 <details>
   <summary>5. 스터디 그룹 자유게시판 작성</summary>
@@ -464,8 +534,8 @@
 
 | Team Member | 조창욱 동료평가                                                                                                                                                                                                                                                                                                                                                  |
 | :---------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-|   김서현    | 프로젝트 초반에 기반 틀을 만들어주셔서 프로젝트를 빨리할 수 있었습니다. 특히, 백엔드 스케줄러 api와 char 라이브러리를 활요한 애니메이션이 인상 깊었습니다. 맡은 일을 최선을 다하시는 모습이 있었기에 덕분에 프로젝트를 잘 마무리 할 수 있었습니다.                            |
-|   전기범    | 예비군 훈련으로 인해 프로젝트에 참여할 수 있는 시간이 물리적으로 가장 적으셨으나 하신 업무가 물리적으로 가장 많으셨습니다. 기범님은 예비군 전날 잠을 거의 못 주무시고 프로젝트 기반 틀이 잡아주시고 가셨습니다. 이러한 점들을 미루어보아 강한 책임감을 느꼈습니다. 그 외에도 본인 기능을 빠르게 구현하고, 능력이 부족한 팀원을 위해 직접 기능을 개발해주며, 프로젝트의 완성도를 높이기 자발적으로 열정을 갖고 한 모습이 인상깊었습니다. |
+|   김서현    | 프로젝트 초반에 기반 틀을 만들어주셔서 프로젝트를 빨리할 수 있었습니다. 특히, 백엔드 스케줄러 api와 chart 라이브러리를 활용한 애니메이션이 인상 깊었습니다. 맡은 일을 최선을 다하시는 모습이 있었기에 덕분에 프로젝트를 잘 마무리 할 수 있었습니다.                            |
+|   전기범    | 예비군 훈련으로 인해 프로젝트에 참여할 수 있는 시간이 물리적으로 가장 적으셨으나 하신 업무가 물리적으로 가장 많으셨습니다. 기범님은 예비군 전날 잠을 거의 못 주무시고 프로젝트 기반 틀을 잡아주시고 가셨습니다. 이러한 점들을 미루어보아 강한 책임감을 느꼈습니다. 그 외에도 본인 기능을 빠르게 구현하고, 능력이 부족한 팀원을 위해 직접 기능을 개발해주며, 프로젝트의 완성도를 높이기 자발적으로 열정을 갖고 한 모습이 인상깊었습니다. |
 |   김민석    | 본인이 맡은 업무를 최선을 다하는 모습이 인상 깊었습니다. 아무에게도 티는 안냈지만 묵묵히 자기할 일 하는 분이셨습니다. 프론트 개발이 미숙한 분이셨지만 시킨 업무는 책임감을 갖고 하시는 모습이 인상깊었습니다.  |
 
 

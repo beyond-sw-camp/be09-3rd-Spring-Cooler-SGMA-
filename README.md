@@ -209,8 +209,9 @@
 
 <details>
   <summary>2.3.3 스터디 그룹원</summary>
-  <img src="https://github.com/user-attachments/assets/64a296f5-06bc-4b2f-a148-8baa08ced26c" alt="스터디 그룹원" />
+  <img src="https://github.com/user-attachments/assets/ae4ff43b-6f9a-49f7-8f71-87ed8c310c6b" alt="스터디 그룹원" />
 </details>
+
 
 ### 2.4 스터디 그룹 일정 및 문제
 <details>

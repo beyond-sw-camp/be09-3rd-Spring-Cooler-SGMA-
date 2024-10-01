@@ -4,9 +4,10 @@
 
 1. [팀 소개](#팀-소개)
 2. [기술 스택](#기술-스택)
-   - [Back & Frontend](#1-backend)
-   - [Database](#2-database)
-   - [Tool](#3-tool)
+   - [Backend](#1-backend)
+   - [Frontend](#2-frontend)
+   - [Database](#3-database)
+   - [Tool](#4-tool)
 3. [프로젝트 개요](#프로젝트-개요)
    - [배경](#1-배경)
    - [서비스 목표](#2-서비스-목표)
@@ -16,6 +17,7 @@
 4. [설계 문서](#설계-문서)
    - [System Architecture](#system-architecture)
    - [주요 기능 FLOW CHART](#주요-기능-flow-chart)
+   - [OAuth 2.0 Sequence Diagram](#OAuth2SequenceDiagram)
    - [DDD](#ddd)
      - [Event Storming](#1-event-storming)
      - [Bounded Context](#2-bounded-context)
@@ -24,7 +26,7 @@
      - [논리 모델링](#2-논리-모델링)
      - [물리 모델링](#3-물리-모델링)
 5. [산출물](#산출물)
-   - [와이어 프레임](#와이어프레임)
+   - [스토리 보드](#스토리보드)
    - [기능명세서서](#기능명세서)
    - [테스트 케이스](#테스트케이스)
    - [화면결과](#화면결과)
@@ -48,22 +50,30 @@
 
 # 기술 스택 <a id="기술-스택"></a>
 
-## 1. Back & Frontend <a id="1-Frontend"></a>
+### 1. Backend <a id="1-backend"></a>
 
-| Java 17                                                                       | Spring Boot                                                                                              | Spring Data JPA                                                                                   | MyBatis                                                                                                 | Hibernate                                                                       | Spring Security                                                                                                   | JWT                                                                                      | Gradle                                                                 | JUnit5                                                                                             | Spring Batch                                                                                                  | OpenAI                                                                                       | Vue.js                                                                                                |
-| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| ![Java](https://img.shields.io/badge/Java-17-007396.svg?&logo=java&color=red) | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3-6DB33F.svg?&logo=spring-boot&color=lightgreen) | ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F.svg?&logo=spring-data-JPA) | ![MyBatis](https://img.shields.io/badge/MyBatis-FE6602.svg?&logo=mybatis5&logoColor=white&color=FE6602) | ![Hibernate](https://img.shields.io/badge/Hibernate-59666C.svg?&logo=hibernate) | ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F.svg?&logo=spring-security&logoColor=white) | ![JWT](https://img.shields.io/badge/JWT-F60055.svg?&logo=json-web-token&logoColor=white) | ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?&logo=gradle) | ![JUnit5](https://img.shields.io/badge/JUnit5-25A162.svg?&logo=junit5&logoColor=white&color=green) | ![Spring Batch](https://img.shields.io/badge/Spring_Batch-6CB33E?style=flat&logo=springbatch&logoColor=white) | ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white) | ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white) |
+| Java 17                                                                       | Spring Boot                                                                                              | Spring Data JPA                                                                                   | MyBatis                                                                                                 | Hibernate                                                                       | Gradle                                                                 | JUnit5                                                                                             | Spring Batch                                                                                                  | OpenAI                                                                                       |
+| ----------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ---------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| ![Java](https://img.shields.io/badge/Java-17-007396.svg?&logo=java&color=red) | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3-6DB33F.svg?&logo=spring-boot&color=lightgreen) | ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F.svg?&logo=spring-data-JPA) | ![MyBatis](https://img.shields.io/badge/MyBatis-FE6602.svg?&logo=mybatis5&logoColor=white&color=FE6602) | ![Hibernate](https://img.shields.io/badge/Hibernate-59666C.svg?&logo=hibernate) | ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?&logo=gradle) | ![JUnit5](https://img.shields.io/badge/JUnit5-25A162.svg?&logo=junit5&logoColor=white&color=green) | ![Spring Batch](https://img.shields.io/badge/Spring_Batch-6CB33E?style=flat&logo=springbatch&logoColor=white) | ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=flat&logo=openai&logoColor=white) |
 
-## 2. Database <a id="2-database"></a>
+### 2. Security <a id="2-security"></a>
 
-| MariaDB                                                                   | Redis                                                                               | AWS S3 Bucket                                                                               |
-| ------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| ![MariaDB](https://img.shields.io/badge/MariaDB-003545.svg?&logo=mariadb) | ![Redis](https://img.shields.io/badge/Redis-DC382D.svg?&logo=redis&logoColor=white) | ![AWS](https://img.shields.io/badge/AWS_S3-569A31?style=flat&logo=amazons3&logoColor=white) |
+| Spring Security                                                                                                   | JWT                                                                                      | 카카오 로그인                                                                                    | 네이버 로그인                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------- |
+| ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F.svg?&logo=spring-security&logoColor=white) | ![JWT](https://img.shields.io/badge/JWT-F60055.svg?&logo=json-web-token&logoColor=white) | ![Kakao Login](https://img.shields.io/badge/Kakao_Login-FFCD00.svg?&logo=kakao&logoColor=black)   | ![Naver Login](https://img.shields.io/badge/Naver_Login-03C75A.svg?&logo=naver&logoColor=white)   |
 
-## 3. Tool <a id="3-tool"></a>
+### 3. Frontend <a id="3-frontend"></a>
 
-| <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"> &nbsp; | <img src="https://img.shields.io/badge/DA%23-0B6121.svg?style=flat&logo=draw.io&logoColor=white"> &nbsp; | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=flat&logo=intellij-idea&logoColor=white) | ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=flat&logo=visual-studio-code&logoColor=white) |
+| Vue 3                                                                                     | JavaScript                                                                                      | HTML                                                                                            | CSS                                                                                            | Chat.js                                                                                     | Calendar                                                                                     |
+| ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------ |
+| ![Vue 3](https://img.shields.io/badge/Vue_3-4FC08D.svg?&logo=vue.js&logoColor=white)       | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?&logo=javascript&logoColor=black) | ![HTML](https://img.shields.io/badge/HTML-E34F26?logo=html5&logoColor=white)                     | ![CSS](https://img.shields.io/badge/CSS-1572B6?logo=css3&logoColor=white)                     | ![Chat.js](https://img.shields.io/badge/Chat.js-FF4500.svg?&logo=javascript&logoColor=white) | ![Calendar](https://img.shields.io/badge/Calendar-8A2BE2.svg?&logo=calendar&logoColor=white) |
+
+### 4. Tool <a id="4-tool"></a>
+
+| GitHub                                                                                          | DA#                                                                                              | IntelliJ IDEA                                                                                          | Visual Studio Code                                                                                  |
 | ---------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"> &nbsp; | <img src="https://img.shields.io/badge/DA%23-0B6121.svg?style=flat&logo=draw.io&logoColor=white"> &nbsp; | ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=flat&logo=intellij-idea&logoColor=white) | ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=flat&logo=visual-studio-code&logoColor=white) |
+
 
 # 프로젝트 개요 <a id="프로젝트-개요"></a>
 
@@ -105,9 +115,13 @@
 
 ![Network Diagrams](https://github.com/user-attachments/assets/83706f89-f51f-4036-8cd7-f4244cb34801)
 
+
 ## 주요 기능 FLOW CHART <a id="주요-기능-flow-chart"></a>
 
 ![문제관련 drawio (1)](https://github.com/user-attachments/assets/59625632-7ce8-4300-b085-945d176620f8)
+
+## OAuth 2.0 Sequence Diagram <a id="OAuth2SequenceDiagram"></a>
+![image](https://github.com/user-attachments/assets/b150924e-92a5-4290-9602-38efa24e9804)
 
 ## DDD <a id="ddd"></a>
 
@@ -133,6 +147,10 @@
 
 ![image](https://github.com/user-attachments/assets/2bf256be-07f2-4f74-91d6-dab3994d7e0b)
 
+
+
+
+
 ## 산출물<a id="산출물"></a>
 
 ### 1. 기능 정의서 <a id="기능명세서"></a>
@@ -141,9 +159,64 @@
 
 ![image](https://github.com/user-attachments/assets/e3a3e217-34e9-4954-8301-1150095d71bf)
 
-## 2. 와이어 프레임<a id="와이어프레임"></a>
 
-![image](https://github.com/user-attachments/assets/c59d9402-1aa6-4499-aad4-606977a89ef6)
+
+## 2. 스토리 보드<a id="스토리보드"></a>
+
+### 2.1. 전체 스토리 보드
+![image](https://github.com/user-attachments/assets/574e8f9d-2cfc-4063-993b-c4980ea9873d)
+
+### 2.2 회원
+
+<details>
+  <summary>2.2.1. 마이페이지</summary>
+  <img src="https://github.com/user-attachments/assets/81084eef-6700-45b2-af93-1aaf8d969781" alt="마이페이지" />
+</details>
+
+<details>
+  <summary>2.2.2. 일반 & 카카오 로그인</summary>
+  <img src="https://github.com/user-attachments/assets/593ac0fb-fe8e-4f1c-a975-daa4b67d7fdd" alt="일반 & 카카오 로그인" />
+</details>
+
+<details>
+  <summary>2.2.3. 회원가입</summary>
+  <img src="https://github.com/user-attachments/assets/fc174228-f14a-4de6-8bf1-2845cb9a2dc5" alt="회원가입" />
+</details>
+
+<details>
+  <summary>2.2.4. 아이디 찾기</summary>
+  <img src="https://github.com/user-attachments/assets/a4f3eb47-401e-4c4c-b95e-1270d71e77a6" alt="아이디 찾기" />
+</details>
+
+<details>
+  <summary>2.2.5. 비밀번호 찾기</summary>
+  <img src="https://github.com/user-attachments/assets/2a95d0d6-6bc2-42d8-adda-8b4663504a34" alt="비밀번호 찾기" />
+</details>
+
+### 2.3 스터디 그룹 및 모집관련
+
+<details>
+  <summary>2.3.1 스터디 그룹 모집글</summary>
+  <img src="https://github.com/user-attachments/assets/ddaa6706-9809-43d8-9319-417ad19eeeb0" alt="스터디 그룹 모집글" />
+</details>
+
+<details>
+  <summary>2.3.2 스터디 그룹 자유게시판 및 공지사항</summary>
+  <img src="https://github.com/user-attachments/assets/1bdcc2c5-6cd2-43f1-bdaf-07592b24e916" alt="스터디 그룹 자유게시판 및 공지사항" />
+</details>
+
+<details>
+  <summary>2.3.3 스터디 그룹원</summary>
+  <img src="https://github.com/user-attachments/assets/5fcfb1ad-5f62-4a3d-9eeb-fe13104b564e" alt="스터디 그룹원" />
+</details>
+
+### 2.4 스터디 그룹 일정 및 문제
+
+<details>
+  <summary>스터디 그룹 일정 및 문제</summary>
+  <img src="https://github.com/user-attachments/assets/3b926cd3-f675-4476-b356-c4c2dffce89c" alt="스터디 그룹 일정 및 문제" />
+</details>
+
 
 
 ## 3. 테스트 계획 및 결과 보고서 <a id="테스트케이스"></a>
@@ -151,6 +224,11 @@
 [테스트 케이스 바로가기](https://docs.google.com/spreadsheets/d/1XVX6lAse2VZzDybUvryL8GyeM3-PO_EZMFG10hMVJSk/edit?gid=1079017783#gid=1079017783)
 
 ![image](https://github.com/user-attachments/assets/0ec2a1c9-a3c7-43da-a0a1-b549f054facb)
+
+
+
+
+
 
 ## 4.화면결과 <a id="화면결과"></a>
 
@@ -290,15 +368,15 @@
    <img src="https://github.com/user-attachments/assets/eebd3690-7e97-4701-8a3d-c72cbbf7358d">
 </details>
 <details>
-  <summary>2. 내가 가입한 스터디그룹 가기 </summary>
+  <summary>3. 내가 가입한 스터디그룹 가기 </summary>
    <img src="https://github.com/user-attachments/assets/d435741b-489b-4ef4-8021-869c9c6fc11c">
 </details>
 <details>
-  <summary>2. 스터디 그룹 그룹원 관리 </summary>
+  <summary>4. 스터디 그룹 그룹원 관리 </summary>
    <img src="https://github.com/user-attachments/assets/19ff3bc3-a2db-42cf-89af-2f3357eba275">
 </details>
 <details>
-  <summary>2. 스터디 그룹 참가 신청자 관리 </summary>
+  <summary>5. 스터디 그룹 참가 신청자 관리 </summary>
    <img src="">
 </details>
 <br>
@@ -387,7 +465,7 @@
 | Team Member | 조창욱 동료평가                                                                                                                                                                                                                                                                                                                                                  |
 | :---------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 |   김서현    | 프로젝트 초반에 기반 틀을 만들어주셔서 프로젝트를 빨리할 수 있었습니다. 특히, 백엔드 스케줄러 api와 char 라이브러리를 활요한 애니메이션이 인상 깊었습니다. 맡은 일을 최선을 다하시는 모습이 있었기에 덕분에 프로젝트를 잘 마무리 할 수 있었습니다.                            |
-|   전기범    | 예비군 훈련으로 인해 프로젝트에 참여할 수 있는 시간이 물리적으로 가장 적으셨으나 하신 업무가 물리적으로 가장 많으셨습니다. 기범님 덕분에 프로젝트 기반 틀이 잡히게 되었고, 이로 인해서 프로젝트를 성공적으로 마무리 할 수 있었습니다. 추가적으로 팀원이 못하는 기능들 마저도 본인 기능을 빠르게 구현하고, 프로젝트의 완성도를 높이기 자발적으로 열정을 갖고 한 모습이 인상깊었습니다. |
+|   전기범    | 예비군 훈련으로 인해 프로젝트에 참여할 수 있는 시간이 물리적으로 가장 적으셨으나 하신 업무가 물리적으로 가장 많으셨습니다. 기범님은 예비군 전날 잠을 거의 못 주무시고 프로젝트 기반 틀이 잡아주시고 가셨습니다. 이러한 점들을 미루어보아 강한 책임감을 느꼈습니다. 그 외에도 본인 기능을 빠르게 구현하고, 능력이 부족한 팀원을 위해 직접 기능을 개발해주며, 프로젝트의 완성도를 높이기 자발적으로 열정을 갖고 한 모습이 인상깊었습니다. |
 |   김민석    | 본인이 맡은 업무를 최선을 다하는 모습이 인상 깊었습니다. 아무에게도 티는 안냈지만 묵묵히 자기할 일 하는 분이셨습니다. 프론트 개발이 미숙한 분이셨지만 시킨 업무는 책임감을 갖고 하시는 모습이 인상깊었습니다.  |
 
 

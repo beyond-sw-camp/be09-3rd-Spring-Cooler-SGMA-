@@ -272,7 +272,7 @@
 
 <details>
   <summary>스터디 그룹 일정 및 문제</summary>
-  <img src="https://github.com/user-attachments/assets/34e9165b-9e6a-4290-99e5-68619ccd3a5a" alt="스터디 그룹 일정 및 문제" />
+  <img src="https://github.com/user-attachments/assets/c1e73822-d022-4b2f-a335-f054fbdd4cf8" alt="스터디 그룹 일정 및 문제" />
 </details>
 
 
